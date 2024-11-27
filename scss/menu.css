@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*пункты главного меню */
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+/* надписи главного меню */
+.nav-link {
+  color: #1B1A1A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 60px; /* 375% */
+  /* отступы между ссылками в навигации */
+  margin-right: 32px;
+}
+
+.home {
+  text-decoration: underline;
+}
+
+.nav-links-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* расстояние между картинками */
+  gap: 30px;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  display: none;
+}
+
+.burger > img {
+  width: 100%;
+}/*# sourceMappingURL=menu.css.map */

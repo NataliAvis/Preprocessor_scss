@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* КАРТИНКИ */
+.progect-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+.progect-item {
+  min-height: 450px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  padding: 40px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.progect-tovar-box-txt { /* текст в фотографиях */
+  color: #282828;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 133.333% */
+}
+
+.b2 { /* новая кнопка */
+  border: 0.5px solid rgb(100, 100, 100);
+  background: rgba(229, 230, 230, 0);
+  color: #1B1A1A;
+  text-align: center;
+  font-style: normal;
+}
+
+/* вставляем картинки */
+.bg1 {
+  /*background: url(img/styl_left.png) center/cover no-repeat;*/
+  background: url(/img/styl_left.png) center/cover no-repeat;
+}
+
+.bg2 {
+  /*background: url(img/styl_center.png) center/cover no-repeat;*/
+  background: url(/img/styl_center.png) center/cover no-repeat;
+}
+
+.bg3 {
+  /*background: url(img/styl_right.png) center/cover no-repeat;*/
+  background: url(/img/styl_right.png) center/cover no-repeat;
+}
+
+.point {
+  margin-top: -20%;
+  color: #E5E6E6;
+}
+
+/* ЧЕРНЫЙ ЭКРАН */
+.black_fon {
+  background-color: #000;
+  max-width: 1110px;
+  max-height: 80px;
+  padding: 0 55px;
+}
+
+/* КАРТОЧКИ */
+.reiteng {
+  /*задаем цвет фону
+  background: #D3CBC5;*/
+  /* задний фон 
+  background: url(img/reiteng_fon.png) center/cover no-repeat;*/
+  background: url(/img/reiteng_fon.png) center/cover no-repeat;
+  margin-top: 0%;
+  min-width: 100%;
+  min-height: 700px;
+}
+
+.reiteng_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reiteng_text_h2 {
+  margin-top: 8%;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.reiteng_text_h1 {
+  margin-top: 1%;
+  color: #000;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+}
+
+.reiteng_cargs {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reiteng_cargs_box {
+  display: flex;
+}
+
+.fon_reiteng_1 {
+  background-color: #FFF;
+  max-width: 205px;
+  max-height: 310px;
+  flex-shrink: 0;
+  margin-right: 1%;
+}
+
+.fon_reiteng_2 {
+  background-color: #FFF;
+  max-width: 205px;
+  max-height: 310px;
+  flex-shrink: 0;
+  margin-right: 1%;
+}
+
+.fon_reiteng_3 {
+  background-color: #FFF;
+  max-width: 205px;
+  max-height: 310px;
+  flex-shrink: 0;
+  margin-right: 1%;
+}
+
+.fon_reiteng_4 {
+  background-color: #FFF;
+  max-width: 205px;
+  max-height: 310px;
+  flex-shrink: 0;
+  margin-right: 1%;
+}
+
+.name {
+  color: #1B1A1A;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.doljnost {
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.reiteng_cards_txt {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.reiteng_opisanie {
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+}/*# sourceMappingURL=photo.css.map */

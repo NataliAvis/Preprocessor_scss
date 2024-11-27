@@ -1,0 +1,161 @@
+/* АДАПТИВ */
+@media (max-width: 950px) {
+    .progect-tovar-box-txt {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+    .fon_reiteng_4 {
+      /* скрываем элемент */
+      display: none;
+    }
+  }
+  @media (max-width: 760px) {
+    .burger > img {
+      width: 80%;
+    }
+    .nav-list {
+      display: none;
+    }
+    .nav-links-img {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+    .bg3 {
+      display: none;
+    }
+    .progect-item {
+      padding: 80px;
+    }
+  }
+  @media (max-width: 630px) {
+    .burger > img {
+      width: 70%;
+    }
+    .reiteng_cargs_box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .reiteng {
+      background: url(img/reiteng_fon.png);
+    }
+  }
+  @media (max-width: 650px) {
+    .burger > img {
+      width: 60%;
+    }
+    .main-h2 {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+    }
+    .main-h1 {
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 300;
+    }
+    .main-p {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+    }
+    .box {
+      max-width: 100px;
+      margin-top: 5%;
+    }
+    .button {
+      font-size: 10px;
+      font-weight: 200;
+      line-height: 14px; /* 150% */
+      letter-spacing: 0.4px;
+      padding: 7px 17px;
+    }
+    .reiteng_cargs_box {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .progect-box {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .bg3 {
+      display: flex;
+    }
+    .reiteng {
+      background: url(img/reiteng_fon.png);
+    }
+  }
+  @media (max-width: 450px) {
+    .burger > img {
+      width: 50%;
+    }
+    .reiteng_text_h2 {
+      margin-top: 8%;
+      font-size: 6px;
+    }
+    .reiteng_text_h1 {
+      margin-top: 1%;
+      font-size: 22px;
+    }
+    .name {
+      font-size: 14px;
+    }
+    .doljnost {
+      font-size: 4px;
+    }
+    .reiteng_cards_txt {
+      font-size: 4px;
+    }
+    .reiteng_opisanie {
+      font-size: 4px;
+    }
+    .reiteng {
+      background: url(img/reiteng_fon.png);
+    }
+  }
+  @media (max-width: 375px) {
+    .main-h2 {
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 300;
+    }
+    .main-h1 {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+    }
+    .main-p {
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+    }
+    .box {
+      max-width: 200px;
+      margin-top: 5%;
+    }
+    .button {
+      font-size: 8px;
+      font-weight: 200;
+      line-height: 14px; /* 150% */
+      letter-spacing: 0.4px;
+      padding: 7px 17px;
+    }
+    .progect-item {
+      min-height: 1000px;
+      width: 15%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+    .footer_flex {
+      justify-content: space-around;
+    }
+    .footer_text {
+      font-size: 8px;
+      line-height: 18px;
+    }
+  }/*# sourceMappingURL=booody.css.map */

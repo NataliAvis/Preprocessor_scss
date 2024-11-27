@@ -1,0 +1,52 @@
+/* ОПИСАНИЕ, КНОПКА, ФОТО */
+.main-screen {
+    /*background: url(img/main-scren-fon.png) center/cover no-repeat;*/
+    background: url(/img/main-scren-fon.png) center/cover no-repeat;
+    margin-top: -1%;
+
+    display: flex;
+    /* главная ось */
+    justify-content: space-around;
+    /* поперечная ось */
+    align-items: flex-start;
+    /* margin-bottom: 100px; */
+} 
+.main-h2 {
+    color: #2C314B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 375% */
+
+    margin-bottom: 7px;
+}
+.main-h1{
+    color: #1B1A1A;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 120% */      
+}
+.main-p {
+    color: #121211;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 250% */
+    flex-shrink: 0;
+}
+.button {
+    background: #1B1A1A;
+    /* стилистика текста в кнопке */
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.4px;
+    padding: 7px 17px;
+}
+.box{
+    max-width: 430px;
+    margin-top: 5%;
+}

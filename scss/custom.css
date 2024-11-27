@@ -1,0 +1,659 @@
+@charset "UTF-8";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet');
+.btn-customcolor {
+  background-color: #D3CBC5;
+}
+
+/* подключение шрифтов */
+body {
+  /* использовали семейство шрифтов */
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ПОДВАЛ */
+.footer_flex {
+  display: flex;
+  /* выравнивание */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 55px;
+}
+
+.footer_text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.photo_img {
+  /* width: 100%; */
+  max-width: 50px;
+}
+
+.footer_text_1 {
+  color: #424242;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 233.333% */
+}
+
+/* АДАПТИВ */
+@media (max-width: 950px) {
+  .progect-tovar-box-txt {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .fon_reiteng_4 {
+    /* скрываем элемент */
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .burger > img {
+    width: 80%;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-links-img {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .bg3 {
+    display: none;
+  }
+  .progect-item {
+    padding: 80px;
+  }
+}
+@media (max-width: 630px) {
+  .burger > img {
+    width: 70%;
+  }
+  .reiteng_cargs_box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .reiteng {
+    background: url(img/reiteng_fon.png);
+  }
+}
+@media (max-width: 650px) {
+  .burger > img {
+    width: 60%;
+  }
+  .main-h2 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .main-h1 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .main-p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .box {
+    max-width: 100px;
+    margin-top: 5%;
+  }
+  .button {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 14px; /* 150% */
+    letter-spacing: 0.4px;
+    padding: 7px 17px;
+  }
+  .reiteng_cargs_box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .progect-box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bg3 {
+    display: flex;
+  }
+  .reiteng {
+    background: url(img/reiteng_fon.png);
+  }
+}
+@media (max-width: 450px) {
+  .burger > img {
+    width: 50%;
+  }
+  .reiteng_text_h2 {
+    margin-top: 8%;
+    font-size: 6px;
+  }
+  .reiteng_text_h1 {
+    margin-top: 1%;
+    font-size: 22px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .doljnost {
+    font-size: 4px;
+  }
+  .reiteng_cards_txt {
+    font-size: 4px;
+  }
+  .reiteng_opisanie {
+    font-size: 4px;
+  }
+  .reiteng {
+    background: url(img/reiteng_fon.png);
+  }
+}
+@media (max-width: 375px) {
+  .main-h2 {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .main-h1 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .main-p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .box {
+    max-width: 200px;
+    margin-top: 5%;
+  }
+  .button {
+    font-size: 8px;
+    font-weight: 200;
+    line-height: 14px; /* 150% */
+    letter-spacing: 0.4px;
+    padding: 7px 17px;
+  }
+  .progect-item {
+    min-height: 1000px;
+    width: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .footer_flex {
+    justify-content: space-around;
+  }
+  .footer_text {
+    font-size: 8px;
+    line-height: 18px;
+  }
+}
+/* НАВИГАЦИЯ */
+.fon {
+  /*задаем цвет фону*/
+  background: #D3CBC5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  max-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+/*пункты главного меню */
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+/* надписи главного меню */
+.nav-link {
+  color: #1B1A1A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 60px; /* 375% */
+  /* отступы между ссылками в навигации */
+  margin-right: 32px;
+}
+
+.home {
+  text-decoration: underline;
+}
+
+.nav-links-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* расстояние между картинками */
+  gap: 30px;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  display: none;
+}
+
+.burger > img {
+  width: 100%;
+}
+
+/* ОПИСАНИЕ, КНОПКА, ФОТО */
+.main-screen {
+  /*background: url(img/main-scren-fon.png) center/cover no-repeat;*/
+  background: url(/img/main-scren-fon.png) center/cover no-repeat;
+  margin-top: -1%;
+  display: flex;
+  /* главная ось */
+  justify-content: space-around;
+  /* поперечная ось */
+  align-items: flex-start;
+  /* margin-bottom: 100px; */
+}
+
+.main-h2 {
+  color: #2C314B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 375% */
+  margin-bottom: 7px;
+}
+
+.main-h1 {
+  color: #1B1A1A;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 120% */
+}
+
+.main-p {
+  color: #121211;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 250% */
+  flex-shrink: 0;
+}
+
+.button {
+  background: #1B1A1A;
+  /* стилистика текста в кнопке */
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.4px;
+  padding: 7px 17px;
+}
+
+.box {
+  max-width: 430px;
+  margin-top: 5%;
+}
+
+/* КАРТИНКИ */
+.progect-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+.progect-item {
+  min-height: 450px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  padding: 40px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.progect-tovar-box-txt { /* текст в фотографиях */
+  color: #282828;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 133.333% */
+}
+
+.b2 { /* новая кнопка */
+  border: 0.5px solid rgb(100, 100, 100);
+  background: rgba(229, 230, 230, 0);
+  color: #1B1A1A;
+  text-align: center;
+  font-style: normal;
+}
+
+/* вставляем картинки */
+.bg1 {
+  /*background: url(img/styl_left.png) center/cover no-repeat;*/
+  background: url(/img/styl_left.png) center/cover no-repeat;
+}
+
+.bg2 {
+  /*background: url(img/styl_center.png) center/cover no-repeat;*/
+  background: url(/img/styl_center.png) center/cover no-repeat;
+}
+
+.bg3 {
+  /*background: url(img/styl_right.png) center/cover no-repeat;*/
+  background: url(/img/styl_right.png) center/cover no-repeat;
+}
+
+.point {
+  margin-top: -20%;
+  color: #E5E6E6;
+}
+
+/* ЧЕРНЫЙ ЭКРАН */
+.black_fon {
+  background-color: #000;
+  max-width: 1110px;
+  max-height: 80px;
+  padding: 0 55px;
+}
+
+/* КАРТОЧКИ */
+.reiteng {
+  /*задаем цвет фону
+  background: #D3CBC5;*/
+  /* задний фон 
+  background: url(img/reiteng_fon.png) center/cover no-repeat;*/
+  background: url(/img/reiteng_fon.png) center/cover no-repeat;
+  margin-top: 0%;
+  min-width: 100%;
+  min-height: 700px;
+}
+
+.reiteng_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reiteng_text_h2 {
+  margin-top: 8%;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.reiteng_text_h1 {
+  margin-top: 1%;
+  color: #000;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+}
+
+.reiteng_cargs {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reiteng_cargs_box {
+  display: flex;
+}
+
+.fon_reiteng_1 {
+  background-color: #FFF;
+  max-width: 205px;
+  max-height: 310px;
+  flex-shrink: 0;
+  margin-right: 1%;
+}
+
+.fon_reiteng_2 {
+  background-color: #FFF;
+  max-width: 205px;
+  max-height: 310px;
+  flex-shrink: 0;
+  margin-right: 1%;
+}
+
+.fon_reiteng_3 {
+  background-color: #FFF;
+  max-width: 205px;
+  max-height: 310px;
+  flex-shrink: 0;
+  margin-right: 1%;
+}
+
+.fon_reiteng_4 {
+  background-color: #FFF;
+  max-width: 205px;
+  max-height: 310px;
+  flex-shrink: 0;
+  margin-right: 1%;
+}
+
+.name {
+  color: #1B1A1A;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.doljnost {
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.reiteng_cards_txt {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.reiteng_opisanie {
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+}
+
+/* АДАПТИВ */
+@media (max-width: 950px) {
+  .progect-tovar-box-txt {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .fon_reiteng_4 {
+    /* скрываем элемент */
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .burger > img {
+    width: 80%;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-links-img {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .bg3 {
+    display: none;
+  }
+  .progect-item {
+    padding: 80px;
+  }
+}
+@media (max-width: 630px) {
+  .burger > img {
+    width: 70%;
+  }
+  .reiteng_cargs_box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .reiteng {
+    background: url(img/reiteng_fon.png);
+  }
+}
+@media (max-width: 650px) {
+  .burger > img {
+    width: 60%;
+  }
+  .main-h2 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .main-h1 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .main-p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .box {
+    max-width: 100px;
+    margin-top: 5%;
+  }
+  .button {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 14px; /* 150% */
+    letter-spacing: 0.4px;
+    padding: 7px 17px;
+  }
+  .reiteng_cargs_box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .progect-box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bg3 {
+    display: flex;
+  }
+  .reiteng {
+    background: url(img/reiteng_fon.png);
+  }
+}
+@media (max-width: 450px) {
+  .burger > img {
+    width: 50%;
+  }
+  .reiteng_text_h2 {
+    margin-top: 8%;
+    font-size: 6px;
+  }
+  .reiteng_text_h1 {
+    margin-top: 1%;
+    font-size: 22px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .doljnost {
+    font-size: 4px;
+  }
+  .reiteng_cards_txt {
+    font-size: 4px;
+  }
+  .reiteng_opisanie {
+    font-size: 4px;
+  }
+  .reiteng {
+    background: url(img/reiteng_fon.png);
+  }
+}
+@media (max-width: 375px) {
+  .main-h2 {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .main-h1 {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .main-p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .box {
+    max-width: 200px;
+    margin-top: 5%;
+  }
+  .button {
+    font-size: 8px;
+    font-weight: 200;
+    line-height: 14px; /* 150% */
+    letter-spacing: 0.4px;
+    padding: 7px 17px;
+  }
+  .progect-item {
+    min-height: 1000px;
+    width: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .footer_flex {
+    justify-content: space-around;
+  }
+  .footer_text {
+    font-size: 8px;
+    line-height: 18px;
+  }
+} /*# sourceMappingURL=booody.css.map *//*# sourceMappingURL=custom.css.map */

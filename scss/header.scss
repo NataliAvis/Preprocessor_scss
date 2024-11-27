@@ -1,0 +1,13 @@
+.btn-customcolor {
+    background-color: #D3CBC5;
+}
+
+/* подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet');
+body{
+    /* использовали семейство шрифтов */
+    font-family: 'Nunito Sans', sans-serif;    
+}
+ul{
+    list-style-type: none;
+}
